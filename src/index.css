@@ -1,0 +1,19 @@
+/* imports */
+
+@import './scss/resets.scss';
+
+
+/* font import */
+@font-face {
+  font-family: 'HiroMisake';
+  src: url('../public/fonts/hiromisake2.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../public/fonts/Satoshi-Variable.ttf') format('truetype');
+}
+
+span,h1{
+  font-family: 'HiroMisake';
+}

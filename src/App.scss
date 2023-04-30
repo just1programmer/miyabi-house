@@ -1,0 +1,146 @@
+@import './scss/colors.scss';
+
+
+main{
+    background-color: $japanese_samurai_white;
+    min-height: 100vh;
+    
+     & button{
+                display: block;
+                cursor: pointer;
+                margin: 0 auto;
+                padding: 1rem 2rem;
+                background-color: $japanese_koy_orange;
+                color: $japanese_samurai_white;
+                font-family: 'HiroMisake';
+                border-top-left-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+                border: none;
+                transition: all 1s ease-in;
+
+                &:hover{
+                    background-color: $japanesse_blue;
+                    color:$japanese_samurai_white
+                }
+            }
+     
+
+    & .main_teaser{
+        position: relative;
+        overflow: hidden;
+        padding: 2rem 0;
+        background: url('./assets/imageMainTeaserLeft.png'),url('./assets/imageMainTeaserRight.png');
+        background-repeat: no-repeat;
+        background-position: top left,top right;
+        
+        & .main_teaser_content{
+            padding: .5rem 4rem;
+            width: 50%;
+            margin: 0 auto;
+
+            & h1{
+                color:$japanesse_blue;
+                padding: 0 1rem;
+                font-size: 64px;
+                text-align: center;
+                }
+
+            & .main_teaser-text{
+                font-family: 'Satoshi';
+                color:$japanesse_blue;
+                text-align: center; 
+                padding: 0 4rem;  
+            }
+        }
+        & .main_teaser_dish{
+            width: 100%;
+            padding: 2rem;
+            background: url(/src/assets/japaneseDish.png);
+            background-repeat: no-repeat;
+            background-position: 45% 32px;
+            height: 461px;
+
+            @media (min-width:1000px) {
+                 background-position: 45% center;
+            }
+        }
+
+        & .main_teaser_traditional_writing{
+            height: 140px;
+            background: url('./assets/JapaneseTraditionalWriting.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }  
+    
+        & .main_teaser_specialties{
+
+            padding: 4rem 0;
+
+          & .main_teaser_specialties-container{  
+            display: flex;
+            justify-content: space-around;
+
+            & .main_teaser_specialties-specialty{
+                border: 1px solid $japanesse_blue;
+                padding: 1.5rem;
+                border-top-left-radius: 4rem;
+                border-bottom-right-radius: 4rem;
+
+                & button{
+                            display: block;
+                            cursor: pointer;
+                            margin: 0 auto;
+                            padding: 1rem 2rem;
+                            background-color: $japanese_samurai_white;
+                            color: $japanese_koy_orange;
+                            font-family: 'HiroMisake';
+                            border-top-left-radius: 1rem;
+                            border-bottom-right-radius: 1rem;
+                            border: 1px solid $japanese_koy_orange;
+                            transition: all 1s ease-in;
+
+                            &:hover{
+                                background-color: $japanese_koy_orange;
+                                color:$japanese_samurai_white
+                            }
+                        }
+
+                & .main_teaser_specialities-specialty-text{
+                    display: flex;
+                    align-items: baseline;
+                    justify-content: space-between;
+
+                        & h1{
+                        color:$japanesse_blue;
+                        padding: 0 1rem;
+                        font-size: 42px;
+                        }
+
+                        & span{
+                            color:$japanesse_blue;
+                            font-family: 'Satoshi';
+                        }
+                    }
+                }
+           }
+        }  
+
+
+          & h1{
+                color:$japanesse_blue;
+                padding: 0 1rem;
+                font-size: 48px;
+                text-align: center;
+           } 
+        & .testimonials{
+            height: 540px;
+            padding: 1rem;
+            background-color: aquamarine;
+            background: url('./assets/leftTestimonial.png'),url('./assets/bottomTestimonial.png'),url('./assets/rightTestimonial.png');
+            background-repeat: no-repeat;
+            background-position: 5%,  bottom , 95%;
+            
+        }
+    }
+}
+  

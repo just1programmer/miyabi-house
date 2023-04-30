@@ -1,0 +1,46 @@
+@import '../scss/colors.scss';
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: $japanese_samurai_white;
+    color: $japanesse_blue;
+    border-bottom: 1px solid rgba($color: #fcb680, $alpha: 0.2);
+
+    & span{
+        font-size: x-large;
+    }
+
+    & .nav_links{
+        display: flex;
+        gap: .5rem;
+      
+        & a{
+            text-decoration: none;
+            font-family: 'Satoshi';
+            color: $japanesse_blue;
+            font-weight: bold;
+            position: relative;
+            transition: all .25s ease-in;
+            &:hover{
+                color: $japanese_koy_orange;
+                font-size: medium;
+                &::after{
+                content: '';
+                display: block; /* make the pseudo-element a block-level element */
+                width: .5rem; /* set the width and height of the dot */
+                height: .5rem;
+                border-radius: 50%; /* make the dot round */
+                background-color: $japanese_koy_orange; /* set the color of the dot */
+                position: absolute; /* position the pseudo-element relative to the link */
+                bottom: -.5rem; /* position the dot below the link */
+                left: 50%; /* center the dot horizontally */
+                transform: translateX(-50%); /* adjust the horizontal position of the dot */
+            }
+            }
+          
+        }
+    }
+}
+

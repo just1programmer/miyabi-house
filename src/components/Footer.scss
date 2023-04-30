@@ -1,0 +1,39 @@
+@import '../scss/colors.scss';
+
+footer{
+  
+    background-color: $japanesse_blue;
+    color: $japanese_samurai_white;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    & span{
+        font-size: x-large;
+    }
+    & a{
+        color: $japanese_samurai_white;
+        text-decoration: none;
+        transition: all .5s ease;
+         &:hover{
+            color: $japanese_koy_orange;
+        }
+    }
+
+    & .footer_links{
+        display: flex;
+        gap: 2rem;
+    }
+
+    & .menu,.about,.sessions,.home{
+        font-family: 'Satoshi';
+        display: flex;
+        gap: .5rem;
+        font-size: large;
+        flex-direction: column;
+
+       
+    }
+}
+
+
